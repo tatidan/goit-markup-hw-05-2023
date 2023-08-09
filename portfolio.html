@@ -336,16 +336,31 @@
 
         <div class="footer-form-part">
           <p class="footer-cta-text">Subscribe</p>
-          <form class="footer-form" action="" autocomplete="off" novalidate>
-            <label for="" name="subscribe">
-              <input type="email" name="email" placeholder="E-mail" />
-              <button type="submit" class="footer-cta-button">
-                Subscribe
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
+          <form
+            class="footer-form"
+            action="subscribe"
+            autocomplete="off"
+            novalidate
+          >
+            <label for="subscribe-email" class="footer-form-label">
+              <input
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+                id="subscribe-email"
+                class="footer-form-input"
+              />
             </label>
+            <button
+              type="submit"
+              class="footer-cta-button"
+              id="footer-cta-button"
+            >
+              Subscribe
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
