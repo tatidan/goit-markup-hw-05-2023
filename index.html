@@ -465,79 +465,80 @@
         </p>
 
         <form action="contact" class="modal-form" autocomplete="off" novalidate>
-          <div>
-            <label class="modal-form-label" for="username">
-              Name
-
+          <div class="modal-form-field-wrap">
+            <label class="modal-form-label" for="user-name"> Name </label>
+            <div class="modal-form-input-wrap">
               <input
                 class="modal-form-input"
                 type="text"
                 name="username"
-                id="username"
+                id="user-name"
                 autofocus
-              />
-            </label>
-            <svg class="icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+              /><svg class="icon modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-          <div>
-            <label class="modal-form-label" for="telephone">
-              Phone
 
+          <div class="modal-form-field-wrap">
+            <label class="modal-form-label" for="telephone"> Phone </label>
+            <div class="modal-form-input-wrap">
               <input
                 class="modal-form-input"
                 type="tel"
                 name="telephone"
                 id="telephone"
               />
-            </label>
-            <svg class="icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+              <svg class="icon modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
-          <div>
-            <label class="modal-form-label" for="email">
-              Email
-
+          <div class="modal-form-field-wrap">
+            <label class="modal-form-label" for="email"> Email </label>
+            <div class="modal-form-input-wrap">
               <input
                 class="modal-form-input"
                 type="email"
                 name="email"
                 id="email"
               />
-            </label>
-            <svg class="icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+              <svg class="icon modal-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
-          <label class="modal-form-label" for="comment">
-            Comment
+          <div class="modal-form-field-wrap">
+            <label class="modal-form-label" for="user-comment"> Comment </label>
             <textarea
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               cols="30"
               rows="10"
               placeholder="Text input"
-              class="modal-form-input"
+              class="modal-form-input modal-form-textarea"
             ></textarea>
-          </label>
+          </div>
 
           <div class="checkbox-wrap">
-            <label for="checkbox">
-              <input
-                type="checkbox"
-                name="checkbox"
-                id="checkbox"
-                class="checkbox"
-              />
-            </label>
-            <p class="checkbox-agree-text">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="checkbox visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="checkbox-agree-text">
+              <span class="custom-checkbox">
+                <svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-            </p>
-            <a href="#" class="checkbox-agree-link link">Privacy Policy</a>
+              <a href="#" class="checkbox-agree-link link">Privacy Policy</a>
+            </label>
           </div>
 
           <button class="modal-form-button" type="submit" id="modal-form-btn">
